@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1614843351 source:c:\users\user\desktop\s2lab2\s2lab2\main.cpp
+	<iostream>
+	<iomanip>
+
+1614861597 source:c:\users\user\desktop\c++ hws\s2\hw2 compilation\s2lab2\s2lab2\main.cpp
+	<iostream>
+	<iomanip>
+
