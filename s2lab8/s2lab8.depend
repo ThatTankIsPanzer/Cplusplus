@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1619677848 source:c:\users\user\desktop\c++ hws\s2\hw8 compilation\s2lab8\main.cpp
+	<iostream>
+	<string>
+	<cctype>
+
