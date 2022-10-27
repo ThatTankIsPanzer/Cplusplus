@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1614874275 source:c:\users\user\desktop\s2lab1\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1614928652 source:c:\users\user\desktop\s2lab1\s2lab1\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+
