@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1621233010 source:c:\users\user\desktop\c++ hws\s2\hw11 compilation\s2lab11-p1\main.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<algorithm>
+
