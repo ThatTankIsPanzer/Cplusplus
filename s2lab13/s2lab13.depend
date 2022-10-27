@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1624458283 source:c:\users\user\desktop\c++ hws\s2\hw13 compilation\s2lab13\main.cpp
+	<iostream>
+	<stdexcept>
+	<new>
+	"Array.h"
+
+1624453967 source:c:\users\user\desktop\c++ hws\s2\hw13 compilation\s2lab13\array.cpp
+	<iostream>
+	<istream>
+	<iomanip>
+	<cstdlib>
+	"Array.h"
+
+1624453143 c:\users\user\desktop\c++ hws\s2\hw13 compilation\s2lab13\array.h
+	<iostream>
+
