@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1616043783 source:c:\users\user\desktop\c++ hws\s2\hw4 compilation\main\s2lab4(main)\main.cpp
+	<iostream>
+
+1617200435 source:c:\users\user\desktop\c++ hws\s2\hw4 compilation\s2lab4\main\s2lab4(main)\main.cpp
+	<iostream>
+	"Queue.h"
+
+1617201411 c:\users\user\desktop\c++ hws\s2\hw4 compilation\s2lab4\main\s2lab4(main)\queue.h
+
+1617200689 source:c:\users\user\desktop\c++ hws\s2\hw4 compilation\s2lab4\main\s2lab4(main)\queue.cpp
+	<iostream>
+	"Queue.h"
+
