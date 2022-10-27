@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1624238897 source:c:\users\user\desktop\c++ hws\s2\hw14 compilation\lab14\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1624455172 source:c:\users\user\desktop\c++ hws\s2\hw14 compilation\s1093513_lab14\clientdata.cpp
+	<string>
+	"ClientData.h"
+
+1624454397 c:\users\user\desktop\c++ hws\s2\hw14 compilation\s1093513_lab14\clientdata.h
+	<string>
+
+1624455172 source:c:\users\user\desktop\c++ hws\s2\hw14 compilation\s1093513_lab14\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	"ClientData.h"
+
