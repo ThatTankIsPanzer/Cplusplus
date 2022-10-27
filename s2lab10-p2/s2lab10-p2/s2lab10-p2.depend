@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1620815725 source:c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\checkingaccount.cpp
+	<iostream>
+	"CheckingAccount.h"
+
+1620751087 c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\checkingaccount.h
+	"Account.h"
+
+1620749144 c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\account.h
+
+1620812639 source:c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\savingaccount.cpp
+	<iostream>
+	"SavingAccount.h"
+
+1620812623 c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\savingaccount.h
+	"Account.h"
+
+1620750684 source:c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\account.cpp
+	<iostream>
+	"Account.h"
+
+1620812806 source:c:\users\user\desktop\c++ hws\s2\hw10 compilation\s2lab10-p2\s2lab10-p2\main.cpp
+	<iostream>
+	<typeinfo>
+	<vector>
+	"Account.h"
+	"CheckingAccount.h"
+	"SavingAccount.h"
+
