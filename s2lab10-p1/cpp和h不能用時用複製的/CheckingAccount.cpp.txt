@@ -1,0 +1,25 @@
+#include <iostream>
+#include "CheckingAccount.h"
+using namespace std;
+
+CheckingAccount::CheckingAccount(double bal, double iRate, double tranFeeW, double tranFeeD)
+{
+    Account(bal, iRate);
+    transactFeeW=tranFeeW;
+    transactFeeD=tranFeeW;
+
+}
+
+bool CheckingAccount::debit(double withdw)
+{
+    Account::debit(withdw);
+}
+
+void CheckingAccount::print()
+{
+    Account::print();
+    cout << "Transaction fee of withdraw: " << transactFeeW << endl;
+    cout << "Transaction fee of Deposit: " << transactFeeD << endl;
+}
+    cout << " Interest rate: " <<  interestRate << endl;
+}
