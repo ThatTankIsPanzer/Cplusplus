@@ -1,0 +1,21 @@
+#include <iostream>
+#include "SavingAccount.h"
+
+using namespace std;
+
+SavingAccount::SavingAccount(double bal, double iRate, double tranFee)
+{
+    Account(bal, iRate);
+    transactFee = tranFee;
+}
+
+bool SavingAccount::debit(double withdw)
+{
+    Account::debit(withdw);
+}
+
+void SavingAccount::print()
+{
+    Account::print();
+    cout << "Transaction fee of withdraw: " << transactFee << endl;
+}

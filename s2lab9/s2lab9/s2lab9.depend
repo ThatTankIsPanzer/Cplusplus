@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1620227185 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\account.cpp
+	<iostream>
+	"Account.h"
+
+1620224771 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\account.h
+
+1620229472 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\checkingaccount.cpp
+	<iostream>
+	"CheckingAccount.h"
+
+1620229329 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\checkingaccount.h
+	"Account.h"
+
+1620229472 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\main.cpp
+	<iostream>
+	"Account.h"
+	"CheckingAccount.h"
+	"SavingAccount.h"
+
+1620227899 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\savingaccount.h
+	"Account.h"
+
+1620229472 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\savingaccount.cpp
+	<iostream>
+	"SavingAccount.h"
+
+1620227185 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\account.cpp
+	<iostream>
+	"Account.h"
+
+1620224771 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\account.h
+
+1620229472 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\checkingaccount.cpp
+	<iostream>
+	"CheckingAccount.h"
+
+1620229329 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\checkingaccount.h
+	"Account.h"
+
+1620229897 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\main.cpp
+	<iostream>
+	"Account.h"
+	"CheckingAccount.h"
+	"SavingAccount.h"
+
+1620227899 c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\savingaccount.h
+	"Account.h"
+
+1620229472 source:c:\users\user\desktop\c++ hws\s2\hw9 compilation\s2lab9\s2lab9\savingaccount.cpp
+	<iostream>
+	"SavingAccount.h"
+
