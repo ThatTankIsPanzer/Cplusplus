@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1617248602 source:c:\users\user\desktop\c++ hws\s2\hw5 compilation\s2lab5(main)\s2lab5(main)\date.cpp
+	<iostream>
+	"Date.h"
+
+1617244363 c:\users\user\desktop\c++ hws\s2\hw5 compilation\s2lab5(main)\s2lab5(main)\date.h
+
+1617246962 source:c:\users\user\desktop\c++ hws\s2\hw5 compilation\s2lab5(main)\s2lab5(main)\main.cpp
+	<iostream>
+	"Date.h"
+	"Employee.h"
+
+1617206787 c:\users\user\desktop\c++ hws\s2\hw5 compilation\s2lab5(main)\s2lab5(main)\employee.h
+	<string>
+	"Date.h"
+
+1617248626 source:c:\users\user\desktop\c++ hws\s2\hw5 compilation\s2lab5(main)\s2lab5(main)\employee.cpp
+	<iostream>
+	"Employee.h"
+	"Date.h"
+

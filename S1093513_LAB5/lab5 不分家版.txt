@@ -1,0 +1,179 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Date
+{
+public:
+    static const int monthsPerYear = 12; // number of months in a year
+    Date( int = 1, int = 1, int = 1900 ); // default constructor
+    void print() const; // print date in month/day/year format
+    ~Date(); // provided to confirm destruction order
+    bool DismissDay(Date &) const;
+
+private:
+    int month; // 1-12 (January-December)
+    int day; // 1-31 based on month
+    int year; // any year
+// utility function to check if day is proper for month and year
+    int checkDay ( int ) const;
+};
+
+Date :: Date(int mn, int dy, int yr)
+{
+    if (mn > 0 && mn <= monthsPerYear)
+    {
+        month = mn;
+    }
+    else
+    {
+        month = 1;
+        cout << "Invalid month (" << mn <<  ") set to 1. \n";
+    }
+
+    year = yr;
+    day = checkDay(dy);
+    cout << "Date object constructor for date ";
+    print();
+    cout << endl;
+}
+
+bool Date :: DismissDay(Date &Dismiss) const
+{
+    if(year < Dismiss.year)
+    {
+        return true;
+    }
+    else if(month < Dismiss.month)
+    {
+        return true;
+    }
+    else if(month == Dismiss.month)
+    {
+        return false;
+    }
+    else if(day < Dismiss.day)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+void Date :: print() const
+{
+    cout << month << '/' << day << '/' << year;
+}
+
+Date :: ~Date()
+{
+    cout << "Date object destructor for date ";
+    print();
+    cout << endl;
+}
+
+int Date :: checkDay(int testDay) const
+{
+    static const int daysPerMonth [monthsPerYear +1] =
+    {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+    if (testDay > 0 && testDay <= daysPerMonth[month])
+    {
+        return testDay;
+    }
+
+    if(month == 2 && testDay == 29 && (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)))
+    {
+        return testDay;
+    }
+    cout << "Invalid day (" << testDay << ") set to 1. \n";
+    return 1;
+}
+////////////////////////////////////////// date
+
+class Employee
+{
+public:
+    Employee( const string &, const string &, const Date &, const Date &, Date &, int );
+    void print() const;
+    ~Employee(); // provided to confirm destruction order
+    Employee &eDismiss(Date &);
+    void Dismiss(const Date &);
+    Employee &increaseSalary(int Salary);
+
+private:
+    string firstName; // composition: member object
+    string lastName; // composition: member object
+    const Date birthDate; // composition: member object
+    const Date hireDate; // composition: member object
+    int monSalary;
+    Date dismissD;
+};
+////////////////////////////////////////////////////////////////salary problem
+
+Employee :: Employee(const string &first, const string &last, const Date &dateOfBirth, const Date &dateOfHire, Date &dateOfDismiss, int Salary)
+:firstName(first), lastName(last), birthDate(dateOfBirth), hireDate(dateOfHire), dismissD(dateOfDismiss), monSalary(Salary)
+{
+   cout << "Employee object constructor: " << firstName << " " << lastName << " Monthly paid: " << monSalary << endl;
+}
+
+void Employee :: print() const
+{
+    cout << lastName << ", " << firstName << "  Hired: ";
+    hireDate.print();
+    cout << "  Birthday: ";
+    birthDate.print();
+    cout << "  Month pay: ";
+    cout << monSalary;
+    cout << "  Dismissing: ";
+    dismissD.print();
+    cout << endl;
+}
+
+Employee &Employee :: eDismiss(Date &dismiss)
+{
+    if(!dismissD.DismissDay(dismiss))
+    {
+        cout << firstName << " " << lastName <<" with inconsistent dates! " << endl;
+    }
+    dismissD = dismiss;
+    return *this;
+}
+
+Employee &Employee :: increaseSalary(int Salary)
+{
+    monSalary += Salary;
+    return *this;
+}
+
+Employee :: ~Employee()
+{
+    cout << "Employee object destructor: " << lastName << ", " << firstName << endl;
+}
+////////////////////////////////////////////// employee
+
+int main()
+{
+    Date birth( 3, 24, 1961 );
+    Date hire( 4, 12, 1998 );
+    Date dismiss(2, 28, 2021);
+    Date zero;
+    Employee manager1( "Tom", "Crouse", birth, hire, zero, 66000 );
+    cout << endl;
+    manager1.print();
+    manager1.increaseSalary(2000).print();
+    manager1.eDismiss(dismiss).print();
+    cout << "\nTest Date constructor with invalid values:\n";
+    Date lastDayOff( 14, 35, 1994 ); // invalid month and day
+    cout << endl;
+    Date birth1( 1, 1, 1968 );
+    Date hire1( 1, 1, 1994 );
+    Date dismiss1(3, 28, 1990);
+    Employee E1( "Mary", "Hunton", birth1, hire1, dismiss1, 45000 );
+    cout << endl;
+    Date dismiss2(3,28, 2000);
+    E1.eDismiss(dismiss2).print();
+    E1.increaseSalary(-2000).print();
+}
